@@ -1,0 +1,9 @@
+{
+  "name": "github-contributions-calendar-writer",
+  "version": "1.0.0",
+  "description": "A simple script to write things in your GitHub contributions calendar",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Wawa#2003",
+  "license": "MIT"
+}
