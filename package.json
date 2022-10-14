@@ -2,8 +2,32 @@
   "name": "github-contributions-calendar-writer",
   "version": "1.0.0",
   "description": "A simple script to write things in your GitHub contributions calendar",
-  "main": "index.js",
+  "main": "src/index.ts",
   "keywords": [],
   "author": "Wawa#2003",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "prepare": "husky install",
+    "test": "eslint ./**/*.ts && mocha -r ts-node/register ./test/**/*.spec.ts"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.1"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.3",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.8.5",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "chai": "^4.3.6",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "mocha": "^10.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
 }
